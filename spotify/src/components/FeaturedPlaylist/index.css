@@ -1,0 +1,87 @@
+.playlist-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+  gap: 1rem;
+  padding: 0 1rem;
+  background-color: #000;
+  min-height: 100vh;
+}
+
+.playlist-error {
+  color: #f87171;
+}
+
+.playlist-card {
+  background-color: #1f2937;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  transition: background-color 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.playlist-card:hover {
+  background-color: #374151;
+}
+
+.playlist-image {
+  width: 100%;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 0.375rem;
+  margin-bottom: 0.75rem;
+}
+
+.playlist-name {
+  color: white;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 0.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.playlist-description {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .playlist-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .playlist-grid {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 5rem;
+    margin-left: 16rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .playlist-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .playlist-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

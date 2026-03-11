@@ -1,0 +1,156 @@
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("https://cdn.wallpapersafari.com/0/35/ihpwMs.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 1rem 1.5rem;
+}
+
+.login-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.login-card {
+  position: relative;
+  z-index: 10;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 28rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  transition: all 0.5s ease-in-out;
+}
+
+.login-card:hover {
+  transform: scale(1.05);
+}
+
+.login-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.logo-circle {
+  width: 4rem;
+  height: 2rem;
+  background-color: #16a34a;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-circle img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.login-error {
+  background-color: #dc2626;
+  color: white;
+  font-size: 0.875rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.login-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  background-color: #1f2937;
+  color: white;
+  border: 2px solid transparent;
+  transition: all 0.3s;
+  font-size: 0.875rem;
+}
+
+.login-input::placeholder {
+  color: #9ca3af;
+}
+
+.login-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #4ade80;
+}
+
+.login-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #d1d5db;
+  font-size: 0.875rem;
+  user-select: none;
+}
+
+.login-checkbox {
+  width: 1rem;
+  height: 1rem;
+}
+
+.login-button {
+  width: 100%;
+  background-color: #15803d;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.login-button:hover {
+  background-color: #16a34a;
+  transform: scale(1.05);
+}
+
+@media (min-width: 640px) {
+  .login-container {
+    padding: 1.5rem;
+  }
+
+  .login-input {
+    font-size: 1rem;
+  }
+
+  .login-checkbox {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .login-checkbox-label {
+    font-size: 1rem;
+  }
+
+  .login-button {
+    font-size: 1rem;
+  }
+}

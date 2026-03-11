@@ -1,0 +1,111 @@
+.liked-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 5rem 0.5rem 6rem 0.5rem;
+  background-color: #161e2e;
+  width: 100%;
+}
+
+.liked-content {
+  width: 100%;
+  max-width: 48rem;
+  padding: 0 0.5rem;
+  margin: 0 auto;
+}
+
+.liked-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+.no-tracks {
+  color: white;
+  text-align: center;
+}
+
+.tracks-wrapper {
+  border-radius: 0.5rem;
+}
+
+.tracks-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tracks-list::-webkit-scrollbar {
+  display: none;
+}
+
+.track-item {
+  display: flex;
+  align-items: center;
+  background-color: #1f2937;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border: 1px solid #374151;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s;
+}
+
+.track-item:hover {
+  background-color: #374151;
+}
+
+.track-thumb {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  margin-right: 1.5rem;
+}
+
+.track-info {
+  flex: 1;
+}
+
+.track-title {
+  color: white;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.track-artists {
+  color: #9ca3af;
+  font-size: 1rem;
+}
+
+.delete-btn {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ef4444;
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #dc2626;
+}
+
+@media (min-width: 768px) {
+  .liked-container {
+    margin-left: 16rem;
+    padding: 1.5rem;
+  }
+
+  .liked-content {
+    padding: 0;
+  }
+}
