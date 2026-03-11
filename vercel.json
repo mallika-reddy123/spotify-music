@@ -1,0 +1,6 @@
+{
+  "buildCommand": "cd spotify && npm install && npm run build",
+  "outputDirectory": "spotify/dist",
+  "installCommand": "cd spotify && npm install",
+  "framework": "vite"
+}
